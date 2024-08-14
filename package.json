@@ -21,7 +21,7 @@
   "author": "Sunny Kumar",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/SUNNYKUMAR1232/project.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
