@@ -1,7 +1,8 @@
 {
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "index.ts",
+  "type": "./src/index.d.ts",
   "description": "Helpers library for Jobber app",
   "engines": {
     "node": ">=18"
@@ -18,8 +19,8 @@
     "trailingComma": "es5"
   },
   "files": [
-    "build/",
-    "src/"
+    "build",
+    "src"
   ],
   "keywords": [],
   "author": "Sunny Kumar",
@@ -32,12 +33,8 @@
   },
   "exports": {
     ".": {
-      "import": "./esm/index.js",
-      "require": "./cjs/index.js"
-    },
-    "./icons": {
-      "import": "./esm/icons/index.js",
-      "require": "./cjs/icons/index.js"
+      "import": "./src/index.js",
+      "require": "./src/index.js"
     }
   },
   "types": "./src/index.d.ts",
