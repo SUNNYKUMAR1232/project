@@ -1,7 +1,7 @@
 {
   "version": "0.0.1",
   "license": "MIT",
-  "main": "index.js",
+  "main": "index.ts",
   "description": "Helpers library for Jobber app",
   "engines": {
     "node": ">=18"
@@ -17,6 +17,10 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
+  "files": [
+    "build/",
+    "src/"
+  ],
   "keywords": [],
   "author": "Sunny Kumar",
   "repository": {
@@ -53,6 +57,5 @@
     "typescript": "^5.5.4",
     "winston": "^3.14.2",
     "winston-elasticsearch": "^0.19.0"
-  },
-  "name": ""
+  }
 }
