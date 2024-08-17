@@ -25,11 +25,11 @@ jobs:
       - run: npm run build
       - run: |
           echo @SUNNYKUMAR1232:registry=https://registry.npmjs.org/>build/.npmrc
-          echo '//registry.npmjs.org/:_authToken=${npm_token}'>>build/.npmrc
+          echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>>build/.npmrc
       - run: npm publish --provenance --access public
         working-directory: ./build
         env:
-            NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
+            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 
 
