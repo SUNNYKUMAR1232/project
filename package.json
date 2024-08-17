@@ -1,6 +1,6 @@
 {
   "name": "@SUNNYKUMAR1232/helper",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "license": "MIT",
   "main": "index.ts",
   "type": "./src/index.d.ts",
