@@ -10,8 +10,9 @@ jobs:
   publish-gpr:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-      packages: write
+        contents: write
+        packages: write
+        id-token: write
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node.js
