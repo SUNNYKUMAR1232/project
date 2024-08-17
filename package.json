@@ -29,7 +29,7 @@
     "url": "git+https://github.com/SUNNYKUMAR1232/project.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@SUNNYKUMAR1232"
+    "registry": "https://npm.pkg.github.com"
   },
   "exports": {
     ".": {
