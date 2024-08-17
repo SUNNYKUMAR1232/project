@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "main": "index.ts",
   "type": "./src/index.d.ts",
@@ -55,5 +55,5 @@
     "winston": "^3.14.2",
     "winston-elasticsearch": "^0.19.0"
   },
-  "name": "project"
+  "name": "@SUNNYKUMAR1232project"
 }
