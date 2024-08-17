@@ -7,7 +7,7 @@ on:
     release:
         types: [published]
 jobs:
-    publish:
+    publish-gpr:
         runs-on: ubuntu-latest
         permissions:
             contents: read
@@ -20,14 +20,14 @@ jobs:
                   node-version: '20.x'
                   registry-url: 'https://npm.pkg.github.com'
                   # Defaults to the user or organization that owns the workflow file
-                  scope: '@sunnykumar1231'
+                  scope: '@SUNNYKUMAR1232'
             - run: npm install
             - run: npm run build
             - run: |
-                echo @sunnykumar1231:registry=https://npm.pkg.github.com/>build/.npmrc
+                echo @SUNNYKUMAR1232:registry=https://npm.pkg.github.com/>build/.npmrc
                 echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}'>>build/.npmrc
             - run: npm publish 
               working-directory: ./build
               env:
-                  NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+                  NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
