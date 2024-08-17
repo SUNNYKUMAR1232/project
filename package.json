@@ -1,4 +1,5 @@
 {
+  "name": "@SUNNYKUMAR1232/helper",
   "version": "1.0.7",
   "license": "MIT",
   "main": "index.ts",
@@ -54,6 +55,5 @@
     "typescript": "^5.5.4",
     "winston": "^3.14.2",
     "winston-elasticsearch": "^0.19.0"
-  },
-  "name": "@sunnykumar1232/project-2324"
+  }
 }
