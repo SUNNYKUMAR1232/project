@@ -1,5 +1,5 @@
 {
-  "name": "@SUNNYKUMAR1232/helper",
+  "name": "helper-12",
   "version": "1.0.8",
   "license": "MIT",
   "main": "index.ts",
@@ -29,9 +29,9 @@
     "type": "git",
     "url": "git+https://github.com/SUNNYKUMAR1232/project.git"
   },
-"publishConfig": {
-  "registry": "https://npm.pkg.github.com"
-},
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "import": "./src/index.js",

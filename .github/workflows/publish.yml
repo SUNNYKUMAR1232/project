@@ -18,18 +18,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          registry-url: https://npm.pkg.github.com/
+          registry-url: 'https://registry.npmjs.org'
           # Defaults to the user or organization that owns the workflow file
           scope: '@SUNNYKUMAR1232'
       - run: npm ci
       - run: npm run build
       - run: |
-          echo @SUNNYKUMAR1232:registry=https://npm.pkg.github.com/>build/.npmrc
-          echo '//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}'>>build/.npmrc
-      - run: npm publish 
+          echo @SUNNYKUMAR1232:registry=https://registry.npmjs.org/>build/.npmrc
+          echo '//registry.npmjs.org/:_authToken=${npm_token}'>>build/.npmrc
+      - run: npm publish --provenance --access public
         working-directory: ./build
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+            NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
 
 
 
