@@ -20,14 +20,14 @@ jobs:
                   node-version: '20.x'
                   registry-url: 'https://npm.pkg.github.com'
                   # Defaults to the user or organization that owns the workflow file
-                  scope: '@SUNNYKUMAR1232'
+                  scope: '@sunnykumar1231'
             - run: npm install
             - run: npm run build
             - run: |
-                echo @SUNNYKUMAR1232:registry=https://npm.pkg.github.com/>build/.npmrc
+                echo @sunnykumar1231:registry=https://npm.pkg.github.com/>build/.npmrc
                 echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}'>>build/.npmrc
             - run: npm publish 
               working-directory: ./build
               env:
-                  NPM_TOKEN: ${{secrets.GITHUB_TOKEN}}
+                  NPM_TOKEN: ${{secrets.NPM_TOKEN}}
 

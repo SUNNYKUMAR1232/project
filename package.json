@@ -26,11 +26,11 @@
   "author": "Sunny Kumar",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SUNNYKUMAR1232/project.git"
+    "url": "git+https://github.com/SUNNYKUMAR1232/project.git"
   },
-"publishConfig": {
-  "@sunnykumar1231:registry": "https://npm.pkg.github.com"
-},
+  "publishConfig": {
+    "@sunnykumar1231:registry": "https://npm.pkg.github.com"
+  },
   "exports": {
     ".": {
       "import": "./src/index.js",
