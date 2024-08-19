@@ -2,7 +2,7 @@
   "name": "helper-12",
   "version": "1.0.8",
   "license": "MIT",
-  "main": "index.ts",
+  "main": "build/src/index.js",
   "type": "./src/index.d.ts",
   "description": "Helpers library for Jobber app",
   "engines": {
@@ -27,10 +27,12 @@
   "author": "Sunny Kumar",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SUNNYKUMAR1232/project.git"
+    "url": "git+https://github.com/SUNNYKUMAR1232/project.git",
+    "directory": "src"
   },
   "publishConfig": {
-    "access": "public"
+  "registry": "https://registry.npmjs.org",
+  "directory": "./src"
   },
   "exports": {
     ".": {
