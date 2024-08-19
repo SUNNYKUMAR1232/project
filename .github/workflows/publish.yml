@@ -21,8 +21,7 @@ jobs:
         with:
             node-version: ${{ matrix.node-version }}
       - run: npm ci --ignore-scripts
-      - working-directory: ./build
-        run: npm run build --if-present
+      - run: npm run build --if-present
   publish:
     needs: build
     runs-on: ubuntu-latest
