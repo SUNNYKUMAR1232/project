@@ -1,5 +1,5 @@
 {
-  "name": "helper-12",
+  "name": "@SUNNYKUMAR1232/Helpers-12",
   "version": "1.0.8",
   "license": "MIT",
   "main": "build/src/index.js",
@@ -30,10 +30,9 @@
     "url": "git+https://github.com/SUNNYKUMAR1232/project.git",
     "directory": "src"
   },
-  "publishConfig": {
-  "registry": "https://registry.npmjs.org",
-  "directory": "./src"
-  },
+"publishConfig": {
+  "@SUNNYKUMAR1232:registry": "https://npm.pkg.github.com"
+},
   "exports": {
     ".": {
       "import": "./src/index.js",
