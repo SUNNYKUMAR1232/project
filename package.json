@@ -1,8 +1,8 @@
 {
-  "name": "@sunnykumr1232/helpers-12",
+  "name": "@SUNNYKUMAR1232/helpers-12",
   "version": "1.0.8",
   "license": "MIT",
-  "main": "build/src/index.js",
+  "main": "./build/src/index.js",
   "type": "./src/index.d.ts",
   "description": "Helpers library for Jobber app",
   "engines": {
@@ -30,9 +30,9 @@
     "url": "git+https://github.com/SUNNYKUMAR1232/project.git",
     "directory": "src"
   },
-"publishConfig": {
-  "@SUNNYKUMAR1232:registry": "https://npm.pkg.github.com"
-},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "exports": {
     ".": {
       "import": "./src/index.js",
@@ -49,6 +49,7 @@
     "cross-env": "^7.0.3"
   },
   "dependencies": {
+    "@SUNNYKUMAR1232/helpers-12": "^1.0.8",
     "cloudinary": "^2.4.0",
     "http-status-codes": "^2.3.0",
     "mongoose": "^8.5.3",
